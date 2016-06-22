@@ -2,6 +2,8 @@ source /etc/profile.d/vim/neadwerx_vimrc
 
 nmap ; :
 
+set t_RV=
+
 set number
 set relativenumber
 
