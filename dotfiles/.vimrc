@@ -1,4 +1,45 @@
-source /etc/profile.d/vim/neadwerx_vimrc
+source /etc/profile.d/vimrc/neadwerx_vimrc
+
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'junegunn/vim-easy-align'
+
+Plugin 'tpope/vim-endwise'
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'ervandew/supertab'
+
+Plugin 'scrooloose/syntastic'
+
+Plugin 'tomtom/tlib_vim'
+
+Plugin 'SirVer/ultisnips'
+
+"Automatic inserting of delimiters
+Plugin 'Raimondi/delimitMate'
+
+"Best colorscheme NA
+Plugin 'ywjno/vim-tomorrow-theme'
+
+"vim-airline/vim-airline: Vim Airline"
+Plugin 'vim-airline/vim-airline'
+
+"Make commenting easier
+Plugin 'tpope/vim-commentary'
+
+call vundle#end()
+filetype plugin indent on
+
+source /etc/profile.d/vimrc/plugins/easy_align.vim
+source /etc/profile.d/vimrc/plugins/syntastic.vim
+source /etc/profile.d/vimrc/plugins/ultisnips.vim
 
 nmap ; :
 
@@ -15,18 +56,6 @@ set scrolloff=4
 
 set incsearch
 set hlsearch
-
-"Automatic inserting of delimiters
-Plugin 'Raimondi/delimitMate'
-
-"Best colorscheme NA
-Plugin 'ywjno/vim-tomorrow-theme'
-
-"vim-airline/vim-airline: Vim Airline"
-Plugin 'vim-airline/vim-airline'
-
-"Make commenting easier
-Plugin 'tpope/vim-commentary'
 
 syntax enable
 let g:solarized_termcolors=256
